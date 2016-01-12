@@ -50,6 +50,9 @@ git clone git://github.com/shawncplus/phpcomplete.vim.git ~/.vim/bundle/phpcompl
 git clone https://github.com/othree/javascript-libraries-syntax.vim ~/.vim/bundle/javascript-libraries-syntax.vim
 git clone https://github.com/mattn/emmet-vim.git ~/.vim/bundle/emmet-vim
 git clone https://github.com/Valloric/YouCompleteMe ~/.vim/bundle/YouCompleteMe
+git clone https://github.com/sheerun/vim-polyglot ~/.vim/bundle/vim-polyglot
+git clone https://github.com/kien/tabman.vim ~/.vim/bundle/tabman
+git clone https://github.com/spf13/PIV ~/.vim/bundle/PIV
 cp -R colors ~/.vim/
 cp -R plugin ~/.vim/
 cp -R after ~/.vim/

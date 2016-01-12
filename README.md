@@ -46,6 +46,9 @@ Open VIM
 * [javascript-libraries-syntax](https://github.com/othree/javascript-libraries-syntax.vim)
 * [emmet-vim](https://github.com/mattn/emmet-vim.git)
 * [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
+* [Polyglot](https://github.com/sheerun/vim-polyglot)
+* [tabman](https://github.com/kien/tabman.vim)
+* [PIV](https://github.com/spf13/PIV)
 
 ## Screenshot
 ![screenshot](screenshot.png)
