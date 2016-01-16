@@ -5,9 +5,9 @@ git clone --recursive https://github.com/Eriner/zim.git ${ZDOTDIR:-${HOME}}/.zim
 #prepend the initialization templates to your configs:
 setopt EXTENDED_GLOB
 for template_file ( ${ZDOTDIR:-${HOME}}/.zim/templates/* ); do
-	user_file="${ZDOTDIR:-${HOME}}/.${template_file:t}"
-	( print -n "$(<${template_file})\n$(<${user_file})" >! ${user_file} ) 2>/dev/null
-done
+	  user_file="${ZDOTDIR:-${HOME}}/.${template_file:t}"
+	    ( print -n "$(<${template_file})\n$(<${user_file})" >! ${user_file} ) 2>/dev/null
+    done
 # Set Zsh as the default shell:
 chsh -s ${commands[zsh]}
 cp .zimrc ~/.zimrc
@@ -15,9 +15,8 @@ cp .zimrc ~/.zimrc
 echo "alias tmux='TERM=screen-256color-bce tmux'" >> ~/.zshrc
 cp .tmux.conf ~/.tmux.conf
 ## ALIAS SETUP
-export GOPATH=$HOME/.golang
-export GOBIN=$HOME/.golang/bin
-alias skype="apulse skype"
+echo 'export GOPATH=$HOME/.golang' >> ~/.zshrc
+echo 'export GOBIN=$HOME/.golang/bin' >> ~/.zshrc
 ## VIM Setup
 cp .vimrc ~/.vimrc
 mkdir -p ~/.vim
@@ -33,6 +32,11 @@ git clone https://github.com/ctrlpvim/ctrlp.vim ~/.vim/bundle/ctrlp.vim
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree.git
 git clone https://github.com/scrooloose/syntastic.git ~/.vim/bundle/syntastic
 git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
+git clone https://github.com/powerline/fonts ~/.vim/bundle/fonts
+cd ~/.vim/bundle/fonts/
+sh ~/.vim/bundle/fonts/install.sh
+cd ~
+rm -rf ~/.vim/bundle/fonts
 git clone https://github.com/mattn/webapi-vim ~/.vim/bundle/webapi-vim
 git clone https://github.com/mhinz/vim-startify ~/.vim/bundle/vim-startify
 git clone git://github.com/tpope/vim-sensible.git ~/.vim/bundle/vim-sensible
